@@ -24,8 +24,17 @@ private:
 	sf::RenderWindow* window;
 	Input* input;
 	sf::Text text;
+	sf::Text drag;
 	sf::Font font;
-	sf::Int16 coordX, coordY;
+	sf::Vector2u coords;
+
+	sf::Vector2i startMouse;
+	bool isDragging;
+
+	sf::Vector2i dragCoords;
+	sf::Vector2i finalCoords;
+	sf::Vector2i hypo;
+	sf::Int32 hyp;
 
 	// Add your object here
 
